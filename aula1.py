@@ -55,4 +55,34 @@ else:
 
 print(f"Você deve pagar um imposto? {imposto}. O valor do imposto é de {valorImposto}")
 
+# Média de alune pra ver se foi aprovade
+
+nota1 = 7
+nota2 = 6
+nota3 = 8
+notas = [nota1, nota2, nota3]
+
+media = (nota1 + nota2 + nota3) / 3
+if media >= 7:
+    aprovacao = True
+else:
+    aprovacao = False
+
+print(f"E alune foi {'aprovado' if aprovacao else 'reprovado'}")
+
+media2 = 0
+counter = 0
+for nota in notas:
+    media2 += nota
+    print(f"media2: {media2}")
+    counter += 1
+    print(f"counter: {counter}")
+
+media2 = media2/counter
+print(f"media2: {media2}")
+
+aprovacao2 = True if media2 >= 7 else False
+
+print(f"Você foi {'aprovado' if aprovacao2 else 'reprovado'}")
+
 
