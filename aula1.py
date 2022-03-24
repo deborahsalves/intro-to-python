@@ -3,8 +3,8 @@ print(11//3)
 print(11%3)
 
 # hash to comment
-# atalho do teclado: ctrl + ;
-# e o undo é o mesmo atalho
+# atalho do teclado pro comment: ctrl + ;
+# e o undo do comment é o mesmo atalho
 """pra passar instruções pra outres devs, usa três aspas duplas"""
 # só cuida que ainda vai ser executado, mas não vai pro front :thinking:
 
@@ -14,9 +14,11 @@ print(a + b)
 print(2 + 5)
 
 # case sensitive
-defaultCase = "camelCase"
+default_variable_fn_or_method_case = "snake_case"
+defaultClassCase = "camelCase"
 
-print(defaultCase)
+print(default_variable_fn_or_method_case)
+print(defaultClassCase)
 
 if b // a >= 1:
     print(b)
@@ -28,11 +30,13 @@ aumento = 2.5
 
 PERCENT = 100
 
-salarioFinal = salario + (salario * aumento / PERCENT)
-print(salarioFinal)
+salario_final = salario + (salario * aumento / PERCENT)
+print(salario_final)
 
 nome = "Déborah"
 sobrenome = "Salves"
+
+#concat
 print(nome + " " + sobrenome)
 print(nome, sobrenome)
 
@@ -41,19 +45,19 @@ salario = int(input("Digite seu salário: "))
 imposto = True #capital pra BOOLEAN
 
 if salario > 1900 and salario < 2800:
-    valorImposto = salario * (7/100)
-    # print("Você deve pagar um imposto? {imposto}. O valor do imposto é de {valorImposto}")
+    valor_imposto = salario * (7/100)
+    # print("Você deve pagar um imposto? {imposto}. O valor do imposto é de {valor_imposto}")
 elif salario >= 2800 and salario < 3700:
-    valorImposto = salario * (15/100)
+    valor_imposto = salario * (15/100)
 elif salario >= 3700 and salario < 4600:
-    valorImposto = salario * (15/100)
+    valor_imposto = salario * (15/100)
 elif salario >= 4600:
-    valorImposto = salario * (15/100)
+    valor_imposto = salario * (15/100)
 else:
     imposto = False
-    valorImposto = 0
+    valor_imposto = 0
 
-print(f"Você deve pagar um imposto? {imposto}. O valor do imposto é de {valorImposto}")
+print(f"Você deve pagar um imposto? {imposto}. O valor do imposto é de {valor_imposto}")
 
 # Média de alune pra ver se foi aprovade
 
