@@ -86,16 +86,18 @@ print(f"Você deve levar {eta:.2f} hora(s) para percorrer {distance:.0f}km a {av
 # 1. Construa um programa no qual um usuário informe a sua 
 # estatura em metros e o programa converta-a para centímetros.
 
+move_forward
+
 in_meters = float(input("Informe sua altura em metros: "))
 in_centimeters = in_meters * 100.00
 
 print(f"Em metros, você mede {in_meters:.2f}m. Em centímetros, você mede {in_centimeters:.0f}cm.")
 
-move_forward
-
 # 2. Construa um programa que receba do usuário a variação do 
 # deslocamento de um objeto (em metros) e a variação do tempo percorrido (em segundo). Ao fim, o programa deve calcular a 
 # velocidade média, em m/s, do objeto
+
+move_forward
 
 delta_meters = float(input("Informe a variação do deslocamento de um objeto (em metros): "))
 delta_time = float(input("Informe a variação do tempo percorrido (em segundos): "))
@@ -105,6 +107,8 @@ avg_speed_ms = delta_meters / delta_time
 print(f"Delta d = {delta_meters:.2f}m. \nDelta t = {delta_time:.2f}s. \nVelocidade média: {avg_speed_ms:.2f}m/s")
 
 # list or tuple? let vs const
+
+move_forward
 
 thistuple = ("apple", "banana", "cherry", "apple", "cherry")
 print(thistuple)
