@@ -162,7 +162,7 @@ house_price = int(input("Quanto custa o imóvel que deseja comprar? "))
 mortgage_years = int(input("Em quantos anos deseja quitar a compra? "))
 mortgage_months = mortgage_years * 12
 monthly_payment = house_price / mortgage_months
-limit = client_wage * 1/3
+limit = client_wage * 3/10
 
 if monthly_payment > limit:
     print(f"Infelizmente seu financiamento foi negado. Sua prestação máxima é de R$ {limit:.2f}, porém as informações fornecidas resultaram em uma prestação de R$ {monthly_payment:.2f}.")
